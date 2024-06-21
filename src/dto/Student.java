@@ -11,6 +11,15 @@ public class Student   extends Person{
         this.noOfSemester = noOfSemester;
     }
 
+    public void printStudentProperties(){
+        System.out.println("**** Print Student Properties ****");
+        System.out.println("Name: " +name);
+        System.out.println("LastName: " +lastName);
+        System.out.println("Age: " +age);
+        System.out.println("No of Semester: " +noOfSemester);
+        System.out.println("Student Code: " +studentCode);
+    }
+
     public String getStudentCode() {
         return studentCode;
     }

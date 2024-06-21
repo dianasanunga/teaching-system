@@ -2,14 +2,23 @@ package dto;
 
 public class Teacher extends Person{
     private String teacherCode;
-    private int yearsOftExperience;
+    private int yearsOfExperience;
     public Teacher(){}
 
 
-    public Teacher(String name, String lastName, int age, String teacherCode, int yearsOftExperience) {
+    public Teacher(String name, String lastName, int age, String teacherCode, int yearsOfExperience) {
         super(name, lastName, age);
         this.teacherCode = teacherCode;
-        this.yearsOftExperience = yearsOftExperience;
+        this.yearsOfExperience = yearsOfExperience;
+    }
+
+    public void printTeacherProperties(){
+        System.out.println("**** Print Teacher Properties ****");
+        System.out.println("Name: " +name);
+        System.out.println("LastName: " +lastName);
+        System.out.println("Age: " +age);
+        System.out.println("Years Of Experience: " +yearsOfExperience);
+        System.out.println("Teacher Code: " +teacherCode);
     }
 
     public String getTeacherCode() {
@@ -20,11 +29,11 @@ public class Teacher extends Person{
         this.teacherCode = teacherCode;
     }
 
-    public int getYearsOftExperience() {
-        return yearsOftExperience;
+    public int getYearsOfExperience() {
+        return yearsOfExperience;
     }
 
-    public void setYearsOftExperience(int yearsOftExperience) {
-        this.yearsOftExperience = yearsOftExperience;
+    public void setYearsOfExperience(int yearsOftExperience) {
+        this.yearsOfExperience = yearsOftExperience;
     }
 }
